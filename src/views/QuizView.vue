@@ -10,18 +10,17 @@ export default {
         return {
             quizData: this.getRandomQuestions(quiz),
             questionIndex: 0,
-            questionStates: []
+            totalScore: 0,
         };
     },
     computed: {
         htmlContent() {
-            return `${this.questionIndex + 1} / 20`;
+            return `${this.questionIndex + 1} / ${this.quizData.length}`;
         }
     },
     methods: {
         getRandomQuestions(quiz) {
-            const randomQuiz = quiz.sort(() => 0.5 - Math.random());
-            return randomQuiz.slice(0, 20);
+            return quiz.sort(() => 0.5 - Math.random()).slice(0, 20);
         },
         nextQuestion() {
             if (this.questionIndex < this.quizData.length - 1) {
@@ -29,14 +28,21 @@ export default {
                 this.$refs.quizQuestions.resetQuestion();
             }
         },
+        increaseScore() {
+            this.totalScore++;
+        }
     }
 };
 </script>
 
 <template>
-    <div class="quiz-container">
+    <div v-if="questionIndex + 1 === quizData.length" class="final-score">
+        <h2>Quiz Terminé !</h2>
+        <p>Votre score : {{ totalScore }} / {{ quizData.length }}</p>
+    </div>
+    <div v-else class="quiz-container">
         <p v-if="quizData.length" v-html="htmlContent"></p>
-        <QuizQuestions ref="quizQuestions" v-if="quizData[questionIndex]" :questionData="quizData[questionIndex]" />
+        <QuizQuestions ref="quizQuestions" v-if="quizData[questionIndex]" :questionData="quizData[questionIndex]" @correct-answer="increaseScore" />
         <button @click="nextQuestion">Suivant</button>
     </div>
 </template>
@@ -50,7 +56,7 @@ export default {
     justify-content: space-between;
 }
 
-p {
+.quiz-container p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -76,5 +82,12 @@ button {
 
 button:active {
     transform: translateY(1.5px);
+}
+
+.final-score {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--vt-c-white);
 }
 </style>

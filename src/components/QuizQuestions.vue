@@ -10,7 +10,6 @@ export default {
         return {
             selectedAnswer: null,
             answerSelected: false,
-            score: 0
         };
     },
     methods: {
@@ -21,6 +20,10 @@ export default {
             if (!this.answerSelected) {
                 this.selectedAnswer = answer;
                 this.answerSelected = true;
+
+                if (this.selectedAnswer === this.questionData.correct_answer) {
+                    this.$emit('correct-answer');
+                }
             }
         },
         addClass(answer) {
@@ -35,11 +38,6 @@ export default {
             this.selectedAnswer = null;
             this.answerSelected = false;
         },
-        addScore() {
-            if (this.selectedAnswer === this.questionData.correct_answer) {
-                this.score++
-            }
-        }
     },
 };
 </script>
