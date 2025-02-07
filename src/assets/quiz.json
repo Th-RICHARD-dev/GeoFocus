@@ -1,0 +1,505 @@
+[
+    {
+        "question": "Quelle est la capitale de la France ?",
+        "options": [
+            "Paris",
+            "Lyon",
+            "Marseille",
+            "Nice"
+        ],
+        "correct_answer": "Paris",
+        "alt": "Paris est la capitale de la <a href='/country/FRA' style='color: var(--vt-c-blue);'>France</a> depuis 508 après J.-C."
+    },
+    {
+        "question": "Quelle est la monnaie officielle du Japon ?",
+        "options": [
+            "Yen",
+            "Won",
+            "Dollar",
+            "Euro"
+        ],
+        "correct_answer": "Yen",
+        "alt": "Le yen (¥) est la monnaie officielle du <a href='/country/JPN' style='color: var(--vt-c-blue);'>Japon</a> depuis 1871."
+    },
+    {
+        "question": "Quel pays utilise l'Euro comme monnaie ?",
+        "options": [
+            "Suisse",
+            "Norvège",
+            "Espagne",
+            "Royaume-Uni"
+        ],
+        "correct_answer": "Espagne",
+        "alt": "L'<a href='/country/ESP' style='color: var(--vt-c-blue);'>Espagne</a> utilise l'Euro (€) depuis son adoption en 1999."
+    },
+    {
+        "question": "Quel pays partage une frontière avec le Brésil ?",
+        "options": [
+            "Argentine",
+            "Chili",
+            "Équateur",
+            "Panama"
+        ],
+        "correct_answer": "Argentine",
+        "alt": "L'<a href='/country/ARG' style='color: var(--vt-c-blue);'>Argentine</a> partage une frontière avec le <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> au nord-est."
+    },
+    {
+        "question": "Quel est le pays le plus peuplé d'Afrique ?",
+        "options": [
+            "Égypte",
+            "Afrique du Sud",
+            "Nigéria",
+            "Kenya"
+        ],
+        "correct_answer": "Nigéria",
+        "alt": "Le <a href='/country/NGA' style='color: var(--vt-c-blue);'>Nigéria</a> est le pays le plus peuplé d'Afrique avec plus de 200 millions d'habitants."
+    },
+    {
+        "question": "Dans quelle région se trouve l'Inde ?",
+        "options": [
+            "Asie de l'Est",
+            "Asie du Sud",
+            "Asie Centrale",
+            "Moyen-Orient"
+        ],
+        "correct_answer": "Asie du Sud",
+        "alt": "L'<a href='/country/IND' style='color: var(--vt-c-blue);'>Inde</a> est située en Asie du Sud, entre la <a href='/country/CHN' style='color: var(--vt-c-blue);'>Chine</a>, le <a href='/country/PAK' style='color: var(--vt-c-blue);'>Pakistan</a>, le <a href='/country/BGD' style='color: var(--vt-c-blue);'>Bangladesh</a>, la <a href='/country/MMR' style='color: var(--vt-c-blue);'>Birmanie</a>, le <a href='/country/NPL' style='color: var(--vt-c-blue);'>Népal</a> et le <a href='/country/BTN' style='color: var(--vt-c-blue);'>Bhoutan</a>."
+    },
+    {
+        "question": "Quel est le drapeau du Canada ?",
+        "options": [
+            "https://flagcdn.com/w320/us.png",
+            "https://flagcdn.com/w320/ca.png",
+            "https://flagcdn.com/w320/mx.png",
+            "https://flagcdn.com/w320/gb.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/ca.png"
+    },
+    {
+        "question": "Quel pays a le plus de voisins ?",
+        "options": [
+            "Chine",
+            "Russie",
+            "Allemagne",
+            "Brésil"
+        ],
+        "correct_answer": "Chine",
+        "alt": "La <a href='/country/CHN' style='color: var(--vt-c-blue);'>Chine</a> a 14 pays voisins, ce qui en fait le pays avec le plus de frontières terrestres."
+    },
+    {
+        "question": "Quelle est la langue officielle du Brésil ?",
+        "options": [
+            "Espagnol",
+            "Portugais",
+            "Français",
+            "Anglais"
+        ],
+        "correct_answer": "Portugais",
+        "alt": "Le portugais est la langue officielle du <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> en raison de la colonisation portugaise."
+    },
+    {
+        "question": "Quel est le plus grand pays du monde en superficie ?",
+        "options": [
+            "Canada",
+            "Chine",
+            "États-Unis",
+            "Russie"
+        ],
+        "correct_answer": "Russie",
+        "alt": "La <a href='/country/RUS' style='color: var(--vt-c-blue);'>Russie</a> est le plus grand pays du monde avec environ 17 millions de km²."
+    },
+    {
+        "question": "Quel pays est composé de l'archipel de plus de 17 000 îles ?",
+        "options": [
+            "Japon",
+            "Indonésie",
+            "Philippines",
+            "Maldives"
+        ],
+        "correct_answer": "Indonésie",
+        "alt": "L'<a href='/country/IDN' style='color: var(--vt-c-blue);'>Indonésie</a> est composée de plus de 17 000 îles, c'est le plus grand archipel au monde."
+    },
+    {
+        "question": "Quel pays a la plus grande population d'Europe ?",
+        "options": [
+            "France",
+            "Italie",
+            "Allemagne",
+            "Royaume-Uni"
+        ],
+        "correct_answer": "Allemagne",
+        "alt": "L'<a href='/country/DEU' style='color: var(--vt-c-blue);'>Allemagne</a> a une population de plus de 83 millions d'habitants, ce qui en fait le pays le plus peuplé d'Europe."
+    },
+    {
+        "question": "Quel pays a la plus petite superficie ?",
+        "options": [
+            "Monaco",
+            "Vatican",
+            "San Marin",
+            "Liechtenstein"
+        ],
+        "correct_answer": "Vatican",
+        "alt": "Le <a href='/country/VAT' style='color: var(--vt-c-blue);'>Vatican</a> est le plus petit pays du monde avec une superficie de seulement 44 hectares."
+    },
+    {
+        "question": "Quel océan borde la côte Est des États-Unis ?",
+        "options": [
+            "Océan Pacifique",
+            "Océan Atlantique",
+            "Océan Indien",
+            "Mer Méditerranée"
+        ],
+        "correct_answer": "Océan Atlantique",
+        "alt": "L'océan Atlantique borde la côte Est des <a href='/country/USA' style='color: var(--vt-c-blue);'>États-Unis</a>."
+    },
+    {
+        "question": "Quelle est la capitale de l'Australie ?",
+        "options": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+        ],
+        "correct_answer": "Canberra",
+        "alt": "Canberra est la capitale politique de l'<a href='/country/AUS' style='color: var(--vt-c-blue);'>Australie</a>, contrairement à Sydney qui est la ville la plus connue."
+    },
+    {
+        "question": "Quel pays n'a pas de frontières terrestres ?",
+        "options": [
+            "Mongolie",
+            "Australie",
+            "Autriche",
+            "Kazakhstan"
+        ],
+        "correct_answer": "Australie",
+        "alt": "L'<a href='/country/AUS' style='color: var(--vt-c-blue);'>Australie</a> est un île-continent et n'a donc aucune frontière terrestre avec un autre pays."
+    },
+    {
+        "question": "Quel pays d'Amérique du Sud parle le néerlandais ?",
+        "options": [
+            "Guyana",
+            "Suriname",
+            "Équateur",
+            "Venezuela"
+        ],
+        "correct_answer": "Suriname",
+        "alt": "Le <a href='/country/SUR' style='color: var(--vt-c-blue);'>Suriname</a> est le seul pays d'Amérique du Sud où le néerlandais est la langue officielle."
+    },
+    {
+        "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+        "options": [
+            "Mer Rouge",
+            "Mer Noire",
+            "Mer Méditerranée",
+            "Mer Baltique"
+        ],
+        "correct_answer": "Mer Méditerranée",
+        "alt": "La Mer Méditerranée sépare l'Europe de l'Afrique, au sud de l'Europe."
+    },
+    {
+        "question": "Quel est le drapeau du Mali ?",
+        "options": [
+            "https://flagcdn.com/w320/gh.png",
+            "https://flagcdn.com/w320/gn.png",
+            "https://flagcdn.com/w320/ml.png",
+            "https://flagcdn.com/w320/sn.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/ml.png"
+    },
+    {
+        "question": "Quel est le pays le plus à l'ouest d'Europe ?",
+        "options": [
+            "Royaume-Uni",
+            "France",
+            "Portugal",
+            "Irlande"
+        ],
+        "correct_answer": "Portugal",
+        "alt": "Le <a href='/country/PRT' style='color: var(--vt-c-blue);'>Portugal</a> est le pays le plus à l'ouest d'Europe, bordé par l'océan Atlantique."
+    },
+    {
+        "question": "Quel est le plus long fleuve du monde ?",
+        "options": [
+            "Nil",
+            "Amazone",
+            "Yangtsé",
+            "Mississippi"
+        ],
+        "correct_answer": "Nil",
+        "alt": "Le Nil est généralement considéré comme le plus long fleuve du monde, mesurant environ 6 650 km."
+    },
+    {
+        "question": "Quel pays partage la plus grande frontière commune avec la France ?",
+        "options": [
+            "Brésil",
+            "Espagne",
+            "Suisse",
+            "Congo"
+        ],
+        "correct_answer": "Brésil",
+        "alt": "Le <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> partage une frontière avec la Guyane Française en Amérique du Sud."
+    },
+    {
+        "question": "Quel est le drapeau du Malawi ?",
+        "options": [
+            "https://flagcdn.com/w320/ke.png",
+            "https://flagcdn.com/w320/ga.png",
+            "https://flagcdn.com/w320/na.png",
+            "https://flagcdn.com/w320/mw.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/mw.png"
+    },
+    {
+        "question": "Quel est le plus grand lac d'Afrique ?",
+        "options": [
+            "Lac Tanganyika",
+            "Lac Victoria",
+            "Lac Malawi",
+            "Lac Turkana"
+        ],
+        "correct_answer": "Lac Victoria",
+        "alt": "Le lac Victoria est le plus grand lac d'Afrique, partagé par trois pays : le <a href='/country/KEN' style='color: var(--vt-c-blue);'>Kenya</a>, l'<a href='/country/UGA' style='color: var(--vt-c-blue);'>Ouganda</a> et la <a href='/country/TZA' style='color: var(--vt-c-blue);'>Tanzanie</a>."
+    },
+    {
+        "question": "Quel pays est la plus grande île au monde ?",
+        "options": [
+            "Indonésie",
+            "Groenland",
+            "Japon",
+            "Madagascar"
+        ],
+        "correct_answer": "Groenland",
+        "alt": "Le <a href='/country/GRL' style='color: var(--vt-c-blue);'>Groenland</a> est la plus grande île du monde, bien que techniquement il soit considéré comme une région autonome du <a href='/country/DNK' style='color: var(--vt-c-blue);'>Danemark</a>."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Amérique du Sud en superficie ?",
+        "options": [
+            "Argentine",
+            "Brésil",
+            "Colombie",
+            "Pérou"
+        ],
+        "correct_answer": "Brésil",
+        "alt": "Le <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> est le plus grand pays d'Amérique du Sud, couvrant environ la moitié de la superficie du continent."
+    },
+    {
+        "question": "Quel est le désert le plus sec du monde ?",
+        "options": [
+            "Désert du Sahara",
+            "Désert d'Arabie",
+            "Désert d'Antarctique",
+            "Désert de Kalahari"
+        ],
+        "correct_answer": "Désert d'Antarctique",
+        "alt": "Le désert d'Antarctique est le désert le plus sec au monde avec 50mm de précipitations par an."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Afrique en superficie ?",
+        "options": [
+            "Nigéria",
+            "Algérie",
+            "Congo",
+            "Soudan"
+        ],
+        "correct_answer": "Algérie",
+        "alt": "L'<a href='/country/DZA' style='color: var(--vt-c-blue);'>Algérie</a> est le plus grand pays d'Afrique en termes de superficie, couvrant plus de 2,38 millions de km²."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Europe en superficie ?",
+        "options": [
+            "France",
+            "Ukraine",
+            "Espagne",
+            "Allemagne"
+        ],
+        "correct_answer": "Ukraine",
+        "alt": "L'<a href='/country/UKR' style='color: var(--vt-c-blue);'>Ukraine</a> est le plus grand pays d'Europe en termes de superficie, avec environ 603 500 km²."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Amérique du Nord en superficie ?",
+        "options": [
+            "États-Unis",
+            "Canada",
+            "Mexique",
+            "Groenland"
+        ],
+        "correct_answer": "Canada",
+        "alt": "Le <a href='/country/CAN' style='color: var(--vt-c-blue);'>Canada</a> est le plus grand pays d'Amérique du Nord et le deuxième plus grand au monde après la <a href='/country/RUS' style='color: var(--vt-c-blue);'>Russie</a>."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Asie en superficie ?",
+        "options": [
+            "Chine",
+            "Inde",
+            "Russie",
+            "Kazakhstan"
+        ],
+        "correct_answer": "Russie",
+        "alt": "La <a href='/country/RUS' style='color: var(--vt-c-blue);'>Russie</a> est le plus grand pays d'Asie, bien qu'elle s'étende également sur l'Europe, avec une superficie de 17 millions de km²."
+    },
+    {
+        "question": "Quel est la plus longue chaîne de montagnes du monde ?",
+        "options": [
+            "Himalaya",
+            "Andes",
+            "Alpes",
+            "Montagnes Rocheuses"
+        ],
+        "correct_answer": "Andes",
+        "alt": "Les Andes sont la plus longue chaîne de montagnes du monde, s'étendant sur plus de 7 000 km le long de la côte ouest de l'Amérique du Sud."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Amérique centrale en superficie ?",
+        "options": [
+            "Guatemala",
+            "Honduras",
+            "Nicaragua",
+            "Panama"
+        ],
+        "correct_answer": "Nicaragua",
+        "alt": "Le <a href='/country/NIC' style='color: var(--vt-c-blue);'>Nicaragua</a> est le plus grand pays d'Amérique centrale en termes de superficie, avec environ 130 000 km²."
+    },
+    {
+        "question": "Quel est le plus grand pays des Caraïbes en superficie ?",
+        "options": [
+            "Cuba",
+            "Jamaïque",
+            "Haïti",
+            "République Dominicaine"
+        ],
+        "correct_answer": "Cuba",
+        "alt": "<a href='/country/CUB' style='color: var(--vt-c-blue);'>Cuba</a> est le plus grand pays des Caraïbes en termes de superficie, avec une superficie de 109 000 km²."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Amérique du Sud en population ?",
+        "options": [
+            "Brésil",
+            "Argentine",
+            "Colombie",
+            "Pérou"
+        ],
+        "correct_answer": "Brésil",
+        "alt": "Le <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> est le pays le plus peuplé d'Amérique du Sud, avec plus de 210 millions d'habitants."
+    },
+    {
+        "question": "Quel est le plus grand pays d'Asie en population ?",
+        "options": [
+            "Inde",
+            "Chine",
+            "Russie",
+            "Indonésie"
+        ],
+        "correct_answer": "Inde",
+        "alt": "L'<a href='/country/IND' style='color: var(--vt-c-blue);'>Inde</a> est le pays le plus peuplé d'Asie, avec environ 1,42 milliards d'habitants."
+    },
+    {
+        "question": "Quel est le plus haut sommet du monde ?",
+        "options": [
+            "Mont Kilimandjaro",
+            "Mont Everest",
+            "Mont Fuji",
+            "Mont McKinley"
+        ],
+        "correct_answer": "Mont Everest",
+        "alt": "Le Mont Everest est le sommet le plus haut du monde, avec une altitude de 8 848 mètres."
+    },
+    {
+        "question": "Quel est le plus grand océan du monde ?",
+        "options": [
+            "Océan Atlantique",
+            "Océan Pacifique",
+            "Océan Indien",
+            "Océan Arctique"
+        ],
+        "correct_answer": "Océan Pacifique",
+        "alt": "L'océan Pacifique est le plus grand océan du monde, couvrant environ 63 millions de km²."
+    },
+    {
+        "question": "Quel est le pays le plus petit du monde ?",
+        "options": [
+            "Monaco",
+            "Vatican",
+            "San Marin",
+            "Liechtenstein"
+        ],
+        "correct_answer": "Vatican",
+        "alt": "Le <a href='/country/VAT' style='color: var(--vt-c-blue);'>Vatican</a> est le plus petit pays du monde, avec une superficie de seulement 44 hectares."
+    },
+    {
+        "question": "Quel est le plus grand continent du monde ?",
+        "options": [
+            "Asie",
+            "Afrique",
+            "Amérique",
+            "Europe"
+        ],
+        "correct_answer": "Asie",
+        "alt": "L'Asie est le plus grand continent du monde, avec une superficie d'environ 44 millions de km²."
+    },
+    {
+        "question": "Quelle est la capitale du Canada ?",
+        "options": [
+            "Toronto",
+            "Ottawa",
+            "Vancouver",
+            "Montréal"
+        ],
+        "correct_answer": "Ottawa",
+        "alt": "Ottawa est la capitale du <a href='/country/CAN' style='color: var(--vt-c-blue);'>Canada</a>, située dans la province de l'Ontario."
+    },
+    {
+        "question": "Quel est l'animal national de l'Australie ?",
+        "options": [
+            "Kangourou",
+            "Koala",
+            "Émeu",
+            "Dingo"
+        ],
+        "correct_answer": "Kangourou",
+        "alt": "Le kangourou est l'animal national de l'<a href='/country/AUS' style='color: var(--vt-c-blue);'>Australie</a>, symbolisant la faune unique du pays."
+    },
+    {
+        "question": "Quel est le plus grand lac d'Amérique du Nord ?",
+        "options": [
+            "Lac Ontario",
+            "Lac Supérieur",
+            "Lac Michigan",
+            "Lac Érié"
+        ],
+        "correct_answer": "Lac Supérieur",
+        "alt": "Le lac Supérieur est le plus grand lac d'Amérique du Nord, à la fois par sa superficie et son volume."
+    },
+    {
+        "question": "Dans quel pays se trouve la montagne Machu Picchu ?",
+        "options": [
+            "Colombie",
+            "Pérou",
+            "Bolivie",
+            "Chili"
+        ],
+        "correct_answer": "Pérou",
+        "alt": "Le Machu Picchu est une ancienne citadelle Inca située au <a href='/country/PER' style='color: var(--vt-c-blue);'>Pérou</a>, dans les Andes."
+    },
+    {
+        "question": "Quel est le pays le plus riche du monde en termes de PIB par habitant ?",
+        "options": [
+            "Luxembourg",
+            "Suisse",
+            "Norvège",
+            "États-Unis"
+        ],
+        "correct_answer": "Luxembourg",
+        "alt": "Le <a href='/country/LUX' style='color: var(--vt-c-blue);'>Luxembourg</a> a le PIB par habitant le plus élevé au monde, grâce à sa petite taille et son économie prospère."
+    },
+    {
+        "question": "Quelle est la capitale de la Mongolie ?",
+        "options": [
+            "Oulan Bator",
+            "Karakorum",
+            "Darkhan",
+            "Erdenet"
+        ],
+        "correct_answer": "Oulan Bator",
+        "alt": "Oulan Bator est la capitale de la <a href='/country/MNG' style='color: var(--vt-c-blue);'>Mongolie</a>, située dans la vallée de la rivière Tuul."
+    }
+]

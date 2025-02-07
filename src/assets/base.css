@@ -1,0 +1,40 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  --vt-c-white: #ffffff;
+
+  --vt-c-black: #16191b;
+  --vt-c-black-mute: #2b3235;
+
+  --vt-c-blue: #00beff;
+  --vt-c-blue-mute: #0074a8;
+}
+
+* {
+  font-family: "Varela Round", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--vt-c-text-dark-2);
+  background: var(--vt-c-black);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family: "Varela Round", serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
