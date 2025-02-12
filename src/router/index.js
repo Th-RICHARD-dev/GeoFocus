@@ -4,16 +4,10 @@ import QuizView from '@/views/QuizView.vue';
 import FavoriteView from '@/views/FavoriteView.vue';
 import AccountView from '@/views/AccountView.vue';
 import CountryDetailView from '@/views/CountryDetailView.vue';
-import StartView from '@/views/StartView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/start',
-      name: 'start',
-      component: StartView
-    },
     {
       path: '/',
       name: 'home',

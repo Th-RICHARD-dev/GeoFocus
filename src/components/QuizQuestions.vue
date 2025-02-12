@@ -46,7 +46,7 @@ export default {
     <div class="container">
         <p>{{ questionData.question }}</p>
         <div v-for="(answer, index) in questionData.options" :key="index">
-            <label :class="addClass(answer)" @click="checkAnswer(answer), addScore()">
+            <label :class="addClass(answer)" @click="checkAnswer(answer)">
                 <img v-if="isImage(answer)" :src="answer" :alt="index + 1" />
                 <span v-else>{{ answer }}</span>
             </label>

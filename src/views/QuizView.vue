@@ -10,7 +10,7 @@ export default {
         return {
             quizData: this.getRandomQuestions(quiz),
             questionIndex: 0,
-            totalScore: 0,
+            totalScore: 1,
         };
     },
     computed: {

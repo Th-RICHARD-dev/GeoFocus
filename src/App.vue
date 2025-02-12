@@ -7,13 +7,7 @@ export default {
     RouterLink,
     RouterView
   },
-  computed: {
-    hideNav() {
-      return this.$route.path === "/start";
-    }
-  },
   async mounted() {
-    this.$router.push('/start');
     await store.fetchData();
   },
 };
@@ -24,7 +18,7 @@ export default {
     <RouterView />
   </div>
 
-  <nav v-if="!hideNav">
+  <nav>
     <RouterLink to="/"><div class="nav-links"><font-awesome-icon :icon="['fas', 'house']" class="fas"/><span>Accueuil</span></div></RouterLink>
     <RouterLink to="/quiz"><div class="nav-links"><font-awesome-icon :icon="['fas', 'lightbulb']" class="fas"/><span>Quiz</span></div></RouterLink>
     <RouterLink to="/favorites"><div class="nav-links"><font-awesome-icon :icon="['fas', 'heart']" class="fas"/><span>Favoris</span></div></RouterLink>
