@@ -82,6 +82,7 @@ export default {
     <div class="wrapper">
         <input class="text" type="text" v-model="inputUsername" placeholder="Enter username" @input="updateUsername" />
         <p class="progression">Ma progression</p>
+        <p class="score">terminer le quiz pour augmenter votre progression ! ({{ quizScore }} / {{ maxScore }})</p>
         <!-- Fermer le svg si besoin -->
         <svg class="ranks" viewBox="0 0 3381 3559" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_44_33)">
@@ -173,7 +174,6 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
     width: 100%;
     height: 100%;
 }
@@ -221,6 +221,13 @@ h3 {
     border-radius: 2.5px;
     background-color: var(--vt-c-white);
     margin: 10px 0;
+}
+
+.score {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 0.6em;
+    color: var(--vt-c-black-mute);
 }
 
 .ranks {
