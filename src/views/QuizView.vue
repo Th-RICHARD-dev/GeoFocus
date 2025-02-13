@@ -24,13 +24,13 @@ export default {
         },
         nextQuestion() {
             if (this.questionIndex < this.quizData.length) {
-                console.log(this.questionIndex);
                 this.questionIndex++;
                 this.$refs.quizQuestions.resetQuestion();
             }
             if (this.questionIndex === this.quizData.length) {
-                console.log('Quiz terminé !');
-                localStorage.setItem('quizScore', this.totalScore);
+                let storedScore = parseInt(localStorage.getItem('quizScore')) || 0;
+                let newTotalScore = storedScore + this.totalScore;
+                localStorage.setItem('quizScore', newTotalScore);
             }
         },
         increaseScore() {

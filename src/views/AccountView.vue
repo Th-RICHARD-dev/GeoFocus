@@ -1,6 +1,10 @@
 <script>
 import local from '@/stores/local';
+import gsap from 'gsap';
+import MotionPathPlugin from 'gsap/MotionPathPlugin';
 import ProfileAvatar from 'vue-profile-avatar';
+
+gsap.registerPlugin(MotionPathPlugin);
 
 export default {
     components: {
@@ -17,7 +21,8 @@ export default {
         return {
             selectedColor: local.selectedColor,
             inputUsername: localStorage.getItem('selectedUsername') || this.username,
-            quizScore: localStorage.getItem('quizScore') || 0
+            quizScore: localStorage.getItem('quizScore') || 0,
+            maxScore: 800
         };
     },
     methods: {
@@ -28,8 +33,31 @@ export default {
             this.inputUsername = event.target.value;
             localStorage.setItem('selectedUsername', this.inputUsername);
             this.$emit('update:selectedUsername', this.inputUsername);
+        },
+        updateQuizScore(newScore) {
+            this.quizScore = newScore;
+            localStorage.setItem('quizScore', this.quizScore);
+            this.progressMarker();
+        },
+        progressMarker() {
+            const progress = this.quizScore / this.maxScore;
+            gsap.to('#marker', {
+                duration: 1,
+                ease: 'power2.inOut',
+                motionPath: {
+                    path: '#path path',
+                    align: '#path path',
+                    alignOrigin: [0.5, 0.5],
+                    autoRotate: true,
+                    start: 0,
+                    end: progress
+                }
+            });
         }
-    }
+    },
+    mounted() {
+        this.progressMarker();
+    },
 };
 </script>
 
@@ -42,8 +70,15 @@ export default {
     </div>
     <div class="wrapper">
         <input class="text" type="text" v-model="inputUsername" placeholder="Enter username" @input="updateUsername" />
-        <p>Ma progression : {{ quizScore }} / 800</p>
-        <img class="path" src="../../public/path.svg" alt="scorepath" />
+        <p>Ma progression</p>
+        <svg id="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 3095 3095" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+            project-id="425f2e5e8f3049938e303f10342496ef" export-id="51895ca61f1844e387b3daef209750d8" cached="false">
+            <path
+                d="M15,3080.192787L15,781.5c0,0,441.177513-766.269856,766.269856-766.269856s766.230145,766.230145,766.230145,766.230145v1537.539711c0,0,450.717102,745.945402,776,745.945402s757.39829-727.343693,757.39829-727.343693v-2337.601709"
+                transform="translate(.000002 0)" fill="none" stroke="#2b3235" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 60" />
+        </svg>
+        <font-awesome-icon :icon="['fas', 'passport']" id="marker"/>
     </div>
 </template>
 
@@ -152,11 +187,17 @@ p::after {
     margin: 10px 0;
 }
 
-.path {
+#path {
     height: 50%;
     margin: 0 auto;
-    z-index: -1;
-    opacity: 0.5;
-    transform: rotateY(180deg);
+}
+
+#marker {
+    color: var(--vt-c-white);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 </style>
