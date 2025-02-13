@@ -10,7 +10,7 @@ export default {
         return {
             quizData: this.getRandomQuestions(quiz),
             questionIndex: 0,
-            totalScore: 1,
+            totalScore: 0,
         };
     },
     computed: {
@@ -23,9 +23,14 @@ export default {
             return quiz.sort(() => 0.5 - Math.random()).slice(0, 20);
         },
         nextQuestion() {
-            if (this.questionIndex < this.quizData.length - 1) {
+            if (this.questionIndex < this.quizData.length) {
+                console.log(this.questionIndex);
                 this.questionIndex++;
                 this.$refs.quizQuestions.resetQuestion();
+            }
+            if (this.questionIndex === this.quizData.length) {
+                console.log('Quiz terminé !');
+                localStorage.setItem('quizScore', this.totalScore);
             }
         },
         increaseScore() {
@@ -36,13 +41,14 @@ export default {
 </script>
 
 <template>
-    <div v-if="questionIndex + 1 === quizData.length" class="final-score">
+    <div v-if="questionIndex === quizData.length" class="final-score">
         <h2>Quiz Terminé !</h2>
         <p>Votre score : {{ totalScore }} / {{ quizData.length }}</p>
     </div>
     <div v-else class="quiz-container">
         <p v-if="quizData.length" v-html="htmlContent"></p>
-        <QuizQuestions ref="quizQuestions" v-if="quizData[questionIndex]" :questionData="quizData[questionIndex]" @correct-answer="increaseScore" />
+        <QuizQuestions ref="quizQuestions" v-if="quizData[questionIndex]" :questionData="quizData[questionIndex]"
+            @correct-answer="increaseScore" />
         <button @click="nextQuestion">Suivant</button>
     </div>
 </template>
