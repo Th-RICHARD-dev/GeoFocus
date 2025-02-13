@@ -20,7 +20,7 @@ export default {
     data() {
         return {
             selectedColor: local.selectedColor,
-            inputUsername: localStorage.getItem('selectedUsername') || this.username,
+            inputUsername: local.selectedUsername || this.username,
             quizScore: localStorage.getItem('quizScore') || 0,
             maxScore: 800
         };
@@ -28,11 +28,11 @@ export default {
     methods: {
         updateColor(event) {
             this.selectedColor = event.target.value;
+            local.setColor(this.selectedColor);
         },
         updateUsername(event) {
             this.inputUsername = event.target.value;
-            localStorage.setItem('selectedUsername', this.inputUsername);
-            this.$emit('update:selectedUsername', this.inputUsername);
+            local.setUsername(this.inputUsername);
         },
         updateQuizScore(newScore) {
             this.quizScore = newScore;
