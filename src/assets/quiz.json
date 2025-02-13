@@ -272,15 +272,15 @@
         "alt": "Le <a href='/country/GRL' style='color: var(--vt-c-blue);'>Groenland</a> est la plus grande île du monde, bien que techniquement il soit considéré comme une région autonome du <a href='/country/DNK' style='color: var(--vt-c-blue);'>Danemark</a>."
     },
     {
-        "question": "Quel est le plus grand pays d'Amérique du Sud en superficie ?",
+        "question": "Quel est le seul département français à porter le nom d'un fleuve qui ne le traverse pas ?",
         "options": [
-            "Argentine",
-            "Brésil",
-            "Colombie",
-            "Pérou"
+            "Le Rhône",
+            "La Gironde",
+            "La Seine-Maritime",
+            "Le Var"
         ],
-        "correct_answer": "Brésil",
-        "alt": "Le <a href='/country/BRA' style='color: var(--vt-c-blue);'>Brésil</a> est le plus grand pays d'Amérique du Sud, couvrant environ la moitié de la superficie du continent."
+        "correct_answer": "Le Var",
+        "alt": "Le <a href='/country/FRA' style='color: var(--vt-c-blue);'>Var</a> est le seul département français nommé d'après un fleuve (le Var) qui ne le traverse plus depuis 1860, suite à un redécoupage territorial."
     },
     {
         "question": "Quel est le désert le plus sec du monde ?",
@@ -501,5 +501,376 @@
         ],
         "correct_answer": "Oulan Bator",
         "alt": "Oulan Bator est la capitale de la <a href='/country/MNG' style='color: var(--vt-c-blue);'>Mongolie</a>, située dans la vallée de la rivière Tuul."
+    },
+    {
+        "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+        "options": [
+            "Auckland",
+            "Wellington",
+            "Christchurch",
+            "Hamilton"
+        ],
+        "correct_answer": "Wellington",
+        "alt": "Wellington est la capitale de la <a href='/country/NZL' style='color: var(--vt-c-blue);'>Nouvelle-Zélande</a>, située à l'extrémité sud de l'île du Nord."
+    },
+    {
+        "question": "Quel continent abrite le pays de la Namibie ?",
+        "options": [
+            "Asie",
+            "Afrique",
+            "Amérique du Sud",
+            "Europe"
+        ],
+        "correct_answer": "Afrique",
+        "alt": "La <a href='/country/NAM' style='color: var(--vt-c-blue);'>Namibie</a> est un pays situé en Afrique australe, bordé par l'océan Atlantique."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le swahili ?",
+        "options": [
+            "Kenya",
+            "Nigéria",
+            "Ghana",
+            "Sénégal"
+        ],
+        "correct_answer": "Kenya",
+        "alt": "Le <a href='/country/KEN' style='color: var(--vt-c-blue);'>Kenya</a> a le swahili comme l'une de ses langues officielles, avec l'anglais."
+    },
+    {
+        "question": "Quel pays partage une frontière avec la Bolivie ?",
+        "options": [
+            "Chili",
+            "Uruguay",
+            "Paraguay",
+            "Équateur"
+        ],
+        "correct_answer": "Chili",
+        "alt": "La <a href='/country/BOL' style='color: var(--vt-c-blue);'>Bolivie</a> partage une frontière avec le <a href='/country/CHL' style='color: var(--vt-c-blue);'>Chili</a> à l'ouest."
+    },
+    {
+        "question": "Quel est le pays le plus peuplé d'Amérique centrale ?",
+        "options": [
+            "Guatemala",
+            "Costa Rica",
+            "Panama",
+            "Honduras"
+        ],
+        "correct_answer": "Guatemala",
+        "alt": "Le <a href='/country/GTM' style='color: var(--vt-c-blue);'>Guatemala</a> est le pays le plus peuplé d'Amérique centrale, avec plus de 17 millions d'habitants."
+    },
+    {
+        "question": "Quelle est la superficie approximative de l'Islande ?",
+        "options": [
+            "103 000 km²",
+            "200 000 km²",
+            "50 000 km²",
+            "300 000 km²"
+        ],
+        "correct_answer": "103 000 km²",
+        "alt": "L'<a href='/country/ISL' style='color: var(--vt-c-blue);'>Islande</a> a une superficie d'environ 103 000 km², ce qui en fait l'un des plus petits pays d'Europe."
+    },
+    {
+        "question": "Quel pays a pour capitale Riyad ?",
+        "options": [
+            "Émirats arabes unis",
+            "Arabie saoudite",
+            "Qatar",
+            "Oman"
+        ],
+        "correct_answer": "Arabie saoudite",
+        "alt": "Riyad est la capitale de l'<a href='/country/SAU' style='color: var(--vt-c-blue);'>Arabie saoudite</a>, située au cœur de la péninsule arabique."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le finnois ?",
+        "options": [
+            "Suède",
+            "Norvège",
+            "Finlande",
+            "Danemark"
+        ],
+        "correct_answer": "Finlande",
+        "alt": "La <a href='/country/FIN' style='color: var(--vt-c-blue);'>Finlande</a> a le finnois comme l'une de ses langues officielles, avec le suédois."
+    },
+    {
+        "question": "Quel pays partage une frontière avec la Corée du Nord ?",
+        "options": [
+            "Japon",
+            "Chine",
+            "Vietnam",
+            "Thaïlande"
+        ],
+        "correct_answer": "Chine",
+        "alt": "La <a href='/country/PRK' style='color: var(--vt-c-blue);'>Corée du Nord</a> partage une frontière avec la <a href='/country/CHN' style='color: var(--vt-c-blue);'>Chine</a> au nord."
+    },
+    {
+        "question": "Quel est le drapeau de la Nouvelle-Zélande ?",
+        "options": [
+            "https://flagcdn.com/w320/au.png",
+            "https://flagcdn.com/w320/nz.png",
+            "https://flagcdn.com/w320/fj.png",
+            "https://flagcdn.com/w320/pg.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/nz.png"
+    },
+    {
+        "question": "Quel pays a pour capitale Bogota ?",
+        "options": [
+            "Pérou",
+            "Colombie",
+            "Équateur",
+            "Venezuela"
+        ],
+        "correct_answer": "Colombie",
+        "alt": "Bogota est la capitale de la <a href='/country/COL' style='color: var(--vt-c-blue);'>Colombie</a>, située dans les Andes."
+    },
+    {
+        "question": "Quel est le drapeau de la Thaïlande ?",
+        "options": [
+            "https://flagcdn.com/w320/la.png",
+            "https://flagcdn.com/w320/th.png",
+            "https://flagcdn.com/w320/vn.png",
+            "https://flagcdn.com/w320/kh.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/th.png"
+    },
+    {
+        "question": "Quel pays partage une frontière avec la Hongrie ?",
+        "options": [
+            "Pologne",
+            "Roumanie",
+            "Bulgarie",
+            "Croatie"
+        ],
+        "correct_answer": "Roumanie",
+        "alt": "La <a href='/country/HUN' style='color: var(--vt-c-blue);'>Hongrie</a> partage une frontière avec la <a href='/country/ROU' style='color: var(--vt-c-blue);'>Roumanie</a> à l'est."
+    },
+    {
+        "question": "Quel est le pays le plus petit d'Amérique du Sud en superficie ?",
+        "options": [
+            "Suriname",
+            "Uruguay",
+            "Guyana",
+            "Équateur"
+        ],
+        "correct_answer": "Suriname",
+        "alt": "Le <a href='/country/SUR' style='color: var(--vt-c-blue);'>Suriname</a> est le plus petit pays d'Amérique du Sud en termes de superficie, avec environ 163 000 km²."
+    },
+    {
+        "question": "Quelle est la capitale de la Lettonie ?",
+        "options": [
+            "Tallinn",
+            "Riga",
+            "Vilnius",
+            "Helsinki"
+        ],
+        "correct_answer": "Riga",
+        "alt": "Riga est la capitale de la <a href='/country/LVA' style='color: var(--vt-c-blue);'>Lettonie</a>, située sur la mer Baltique."
+    },
+    {
+        "question": "Quel continent abrite le pays du Botswana ?",
+        "options": [
+            "Asie",
+            "Afrique",
+            "Amérique du Sud",
+            "Océanie"
+        ],
+        "correct_answer": "Afrique",
+        "alt": "Le <a href='/country/BWA' style='color: var(--vt-c-blue);'>Botswana</a> est un pays situé en Afrique australe, connu pour ses réserves naturelles."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le quechua ?",
+        "options": [
+            "Pérou",
+            "Argentine",
+            "Chili",
+            "Colombie"
+        ],
+        "correct_answer": "Pérou",
+        "alt": "Le <a href='/country/PER' style='color: var(--vt-c-blue);'>Pérou</a> reconnaît le quechua comme l'une de ses langues officielles, avec l'espagnol."
+    },
+    {
+        "question": "Quel pays partage une frontière avec le Kazakhstan ?",
+        "options": [
+            "Ouzbékistan",
+            "Turkménistan",
+            "Tadjikistan",
+            "Kirghizistan"
+        ],
+        "correct_answer": "Ouzbékistan",
+        "alt": "Le <a href='/country/KAZ' style='color: var(--vt-c-blue);'>Kazakhstan</a> partage une frontière avec l'<a href='/country/UZB' style='color: var(--vt-c-blue);'>Ouzbékistan</a> au sud."
+    },
+    {
+        "question": "Quel est le pays le moins peuplé d'Afrique ?",
+        "options": [
+            "Seychelles",
+            "Cap-Vert",
+            "Comores",
+            "São Tomé-et-Príncipe"
+        ],
+        "correct_answer": "Seychelles",
+        "alt": "Les <a href='/country/SYC' style='color: var(--vt-c-blue);'>Seychelles</a> sont le pays le moins peuplé d'Afrique, avec environ 98 000 habitants."
+    },
+    {
+        "question": "Quelle est la superficie approximative de la Belgique ?",
+        "options": [
+            "30 000 km²",
+            "50 000 km²",
+            "70 000 km²",
+            "90 000 km²"
+        ],
+        "correct_answer": "30 000 km²",
+        "alt": "La <a href='/country/BEL' style='color: var(--vt-c-blue);'>Belgique</a> a une superficie d'environ 30 000 km², ce qui en fait l'un des plus petits pays d'Europe."
+    },
+    {
+        "question": "Quel pays a pour capitale Doha ?",
+        "options": [
+            "Qatar",
+            "Koweït",
+            "Bahreïn",
+            "Émirats arabes unis"
+        ],
+        "correct_answer": "Qatar",
+        "alt": "Doha est la capitale du <a href='/country/QAT' style='color: var(--vt-c-blue);'>Qatar</a>, située sur la côte est de la péninsule arabique."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le tigrigna ?",
+        "options": [
+            "Érythrée",
+            "Éthiopie",
+            "Somalie",
+            "Djibouti"
+        ],
+        "correct_answer": "Érythrée",
+        "alt": "L'<a href='/country/ERI' style='color: var(--vt-c-blue);'>Érythrée</a> a le tigrigna comme l'une de ses langues officielles, avec l'arabe et l'anglais."
+    },
+    {
+        "question": "Quel pays partage une frontière avec le Bhoutan ?",
+        "options": [
+            "Népal",
+            "Bangladesh",
+            "Myanmar",
+            "Chine"
+        ],
+        "correct_answer": "Chine",
+        "alt": "Le <a href='/country/BTN' style='color: var(--vt-c-blue);'>Bhoutan</a> partage une frontière avec la <a href='/country/CHN' style='color: var(--vt-c-blue);'>Chine</a> au nord."
+    },
+    {
+        "question": "Quel est le drapeau de la Finlande ?",
+        "options": [
+            "https://flagcdn.com/w320/se.png",
+            "https://flagcdn.com/w320/fi.png",
+            "https://flagcdn.com/w320/no.png",
+            "https://flagcdn.com/w320/dk.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/fi.png"
+    },
+    {
+        "question": "Quel pays a pour capitale Ouagadougou ?",
+        "options": [
+            "Mali",
+            "Burkina Faso",
+            "Niger",
+            "Tchad"
+        ],
+        "correct_answer": "Burkina Faso",
+        "alt": "Ouagadougou est la capitale du <a href='/country/BFA' style='color: var(--vt-c-blue);'>Burkina Faso</a>, située en Afrique de l'Ouest."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le malais ?",
+        "options": [
+            "Indonésie",
+            "Malaisie",
+            "Philippines",
+            "Singapour"
+        ],
+        "correct_answer": "Malaisie",
+        "alt": "La <a href='/country/MYS' style='color: var(--vt-c-blue);'>Malaisie</a> a le malais comme langue officielle, également appelé bahasa malaysia."
+    },
+    {
+        "question": "Quel pays partage une frontière avec le Nicaragua ?",
+        "options": [
+            "Costa Rica",
+            "Panama",
+            "Honduras",
+            "Guatemala"
+        ],
+        "correct_answer": "Costa Rica",
+        "alt": "Le <a href='/country/NIC' style='color: var(--vt-c-blue);'>Nicaragua</a> partage une frontière avec le <a href='/country/CRI' style='color: var(--vt-c-blue);'>Costa Rica</a> au sud."
+    },
+    {
+        "question": "Quel est le pays le plus petit d'Afrique en superficie ?",
+        "options": [
+            "Gambie",
+            "Seychelles",
+            "Cap-Vert",
+            "São Tomé-et-Príncipe"
+        ],
+        "correct_answer": "Seychelles",
+        "alt": "Les <a href='/country/SYC' style='color: var(--vt-c-blue);'>Seychelles</a> sont le plus petit pays d'Afrique en termes de superficie, avec seulement 459 km²."
+    },
+    {
+        "question": "Quel pays a pour capitale Reykjavik ?",
+        "options": [
+            "Islande",
+            "Norvège",
+            "Finlande",
+            "Danemark"
+        ],
+        "correct_answer": "Islande",
+        "alt": "Reykjavik est la capitale de l'<a href='/country/ISL' style='color: var(--vt-c-blue);'>Islande</a>, située sur la côte sud-ouest de l'île."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le kirghize ?",
+        "options": [
+            "Ouzbékistan",
+            "Kirghizistan",
+            "Tadjikistan",
+            "Turkménistan"
+        ],
+        "correct_answer": "Kirghizistan",
+        "alt": "Le <a href='/country/KGZ' style='color: var(--vt-c-blue);'>Kirghizistan</a> a le kirghize comme langue officielle, avec le russe."
+    },
+    {
+        "question": "Quel pays partage une frontière avec la Moldavie ?",
+        "options": [
+            "Ukraine",
+            "Roumanie",
+            "Bulgarie",
+            "Serbie"
+        ],
+        "correct_answer": "Roumanie",
+        "alt": "La <a href='/country/MDA' style='color: var(--vt-c-blue);'>Moldavie</a> partage une frontière avec la <a href='/country/ROU' style='color: var(--vt-c-blue);'>Roumanie</a> à l'ouest."
+    },
+    {
+        "question": "Quel est le pays le plus peuplé des Caraïbes ?",
+        "options": [
+            "Cuba",
+            "Haïti",
+            "République Dominicaine",
+            "Jamaïque"
+        ],
+        "correct_answer": "Cuba",
+        "alt": "<a href='/country/CUB' style='color: var(--vt-c-blue);'>Cuba</a> est le pays le plus peuplé des Caraïbes, avec plus de 11 millions d'habitants."
+    },
+    {
+        "question": "Quel pays a pour capitale Asuncion ?",
+        "options": [
+            "Paraguay",
+            "Uruguay",
+            "Bolivie",
+            "Argentine"
+        ],
+        "correct_answer": "Paraguay",
+        "alt": "Asuncion est la capitale du <a href='/country/PRY' style='color: var(--vt-c-blue);'>Paraguay</a>, située sur les rives du fleuve Paraguay."
+    },
+    {
+        "question": "Quel pays a pour langue officielle le dzongkha ?",
+        "options": [
+            "Népal",
+            "Bhoutan",
+            "Bangladesh",
+            "Myanmar"
+        ],
+        "correct_answer": "Bhoutan",
+        "alt": "Le <a href='/country/BTN' style='color: var(--vt-c-blue);'>Bhoutan</a> a le dzongkha comme langue officielle, reflétant sa culture unique."
     }
 ]
