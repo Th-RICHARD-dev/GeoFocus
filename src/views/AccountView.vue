@@ -21,7 +21,7 @@ export default {
         return {
             selectedColor: local.selectedColor,
             inputUsername: local.selectedUsername || this.username,
-            quizScore: localStorage.getItem('quizScore') || 0,
+            quizScore: local.quizScore,
             maxScore: 800
         };
     },
@@ -36,7 +36,7 @@ export default {
         },
         updateQuizScore(newScore) {
             this.quizScore = newScore;
-            localStorage.setItem('quizScore', this.quizScore);
+            local.updateQuizScore(newScore);
             this.progressMarker();
         },
         progressMarker() {
@@ -228,10 +228,11 @@ h3 {
     margin-bottom: 10px;
     font-size: 0.6em;
     color: var(--vt-c-black-mute);
+    text-align: center;
 }
 
 .ranks {
-    height: 55%;
+    width: 80%;
     margin: 0 auto;
 }
 
