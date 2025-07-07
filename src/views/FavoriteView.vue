@@ -11,7 +11,7 @@ export default {
 }
 </script>
 <template>
-    <h2>Tout vos favoris</h2>
+    <h3>Tout vos favoris</h3>
     <ul>
         <li v-for="(favorites, index) in favoriteCountries" :key="index">
             <router-link :to="`/country/${favorites.cca3}`">
@@ -23,12 +23,13 @@ export default {
 </template>
 
 <style scoped>
-h2 {
-    color: var(--vt-c-white);
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 15px;
+h3 {
+    color: var(--vt-c-black-mute);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    color: var(--vt-c-black-mute);
 }
 
 ul {

@@ -22,7 +22,7 @@ export default {
     <RouterLink to="/"><div class="nav-links"><font-awesome-icon :icon="['fas', 'house']" class="fas"/><span>Accueuil</span></div></RouterLink>
     <RouterLink to="/quiz"><div class="nav-links"><font-awesome-icon :icon="['fas', 'lightbulb']" class="fas"/><span>Quiz</span></div></RouterLink>
     <RouterLink to="/favorites"><div class="nav-links"><font-awesome-icon :icon="['fas', 'heart']" class="fas"/><span>Favoris</span></div></RouterLink>
-    <RouterLink to="/account"><div class="nav-links"><font-awesome-icon :icon="['fas', 'user']" class="fas"/><span>Compte</span></div></RouterLink>
+    <RouterLink to="/account"><div class="nav-links"><font-awesome-icon :icon="['fas', 'user']" class="fas"/><span>Profil</span></div></RouterLink>
   </nav>
 </template>
 
