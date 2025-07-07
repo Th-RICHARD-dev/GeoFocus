@@ -1,6 +1,7 @@
 <script>
 import quiz from '@/assets/quiz.json';
 import QuizQuestions from '@/components/QuizQuestions.vue';
+import local from '@/stores/local';
 
 export default {
     components: {
@@ -24,13 +25,12 @@ export default {
         },
         nextQuestion() {
             if (this.questionIndex < this.quizData.length) {
-                console.log(this.questionIndex);
                 this.questionIndex++;
                 this.$refs.quizQuestions.resetQuestion();
             }
             if (this.questionIndex === this.quizData.length) {
-                console.log('Quiz terminé !');
-                localStorage.setItem('quizScore', this.totalScore);
+                let newTotalScore = local.quizScore + this.totalScore;
+                local.updateQuizScore(newTotalScore);
             }
         },
         increaseScore() {
