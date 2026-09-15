@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://restcountries.com/v3.1/';
+const BASE_URL = '/api/countries';
 
 function buildFields(fields) {
   return fields && fields.length ? `?fields=${fields.join(',')}` : '';
