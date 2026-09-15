@@ -1,21 +1,11 @@
 export default async function handler(req, res) {
   try {
-    const path = req.query.path;
-
-    if (!path) {
-      return res.status(400).json({
-        error: 'Missing API path'
-      });
-    }
-
-    const pathString = Array.isArray(path)
-      ? path.join('/')
-      : path;
+    const { endpoint = 'all' } = req.query;
 
     const fields = req.query.fields;
 
     const url = new URL(
-      `https://restcountries.com/v3.1/${pathString}`
+      `https://restcountries.com/v3.1/${endpoint}`
     );
 
     if (fields) {
@@ -25,7 +15,7 @@ export default async function handler(req, res) {
       );
     }
 
-    console.log('Fetching:', url.toString());
+    console.log('Fetching REST Countries:', url.toString());
 
     const response = await fetch(url.toString());
 
@@ -39,10 +29,10 @@ export default async function handler(req, res) {
 
     return res.status(200).json(data);
   } catch (error) {
-    console.error('REST Countries proxy error:', error);
+    console.error('API proxy error:', error);
 
     return res.status(500).json({
-      error: 'Failed to fetch data from REST Countries',
+      error: 'Failed to fetch countries',
       message: error.message
     });
   }
