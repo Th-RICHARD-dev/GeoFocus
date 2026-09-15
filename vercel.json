@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/countries/:path*",
+      "destination": "/api/countries/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
