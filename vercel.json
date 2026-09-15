@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/countries/:path*",
-      "destination": "/api/countries/:path*"
+      "destination": "https://restcountries.com/v3.1/:path*"
     },
     {
       "source": "/(.*)",

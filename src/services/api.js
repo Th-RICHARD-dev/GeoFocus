@@ -2,26 +2,15 @@ import axios from 'axios';
 
 const BASE_URL = '/api/countries';
 
-function buildParams(fields = []) {
-  const params = new URLSearchParams();
-
-  if (fields && fields.length) {
-    params.set('fields', fields.join(','));
-  }
-
-  return params.toString();
+function buildFields(fields) {
+  return fields && fields.length
+    ? `?fields=${fields.join(',')}`
+    : '';
 }
 
 function get(endpoint, fields = []) {
-  const params = new URLSearchParams();
-
-  params.set('endpoint', endpoint);
-
-  if (fields && fields.length) {
-    params.set('fields', fields.join(','));
-  }
-
-  return axios.get(`${BASE_URL}?${params.toString()}`);
+  const url = `${BASE_URL}/${endpoint}${buildFields(fields)}`;
+  return axios.get(url);
 }
 
 function getAllCountries(fields = []) {
