@@ -5,9 +5,6 @@ import CountryList from '@/components/CountryList.vue';
 import QuizRedirect from '@/components/QuizRedirect.vue';
 
 export default {
-  props: {
-    search: String
-  },
   components: {
     SearchBar,
     DiscoveryCountryList,

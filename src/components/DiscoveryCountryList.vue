@@ -20,10 +20,10 @@ export default {
   <h3>Découvrir des pays :</h3>
   <swiper :slides-per-view="1.5" :space-between="10" class="swiper">
     <swiper-slide v-for="(country, index) in filteredCountries" :key="index" class="swiper-slide">
-      <router-link :to="`/country/${country.cca3}`">
+      <router-link v-if="country.codes?.alpha_3" :to="`/country/${country.codes.alpha_3}`">
         <div class="pres">
-          <p>{{ country.translations.fra.common }}</p>
-          <img :src="country.flags.png" :alt="country.cca3" />
+          <p>{{ country.names?.translations?.fra?.common || country.names?.common }}</p>
+          <img :src="`https://flags.restcountries.com/v5/w320/${country.codes?.alpha_2?.toLowerCase()}.png`" :alt="country.codes?.alpha_3" />
         </div>
         <p class="more">En savoir plus →</p>
       </router-link>

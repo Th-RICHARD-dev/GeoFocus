@@ -5,7 +5,7 @@ import fetch from '@/stores/fetch.js';
 export default {
     computed: {
         favoriteCountries() {
-            return fetch.countries.filter(fav => local.favorites.includes(fav.cca3));
+            return fetch.countries.filter(fav => local.favorites.includes(fav.codes?.alpha_3));
         }
     }
 }
@@ -14,9 +14,9 @@ export default {
     <h3>Tout vos favoris</h3>
     <ul>
         <li v-for="(favorites, index) in favoriteCountries" :key="index">
-            <router-link :to="`/country/${favorites.cca3}`">
-                {{ favorites.translations.fra.common }}
-                <img :src="favorites.flags.png" :alt="favorites.cca3" />
+            <router-link :to="`/country/${favorites.codes?.alpha_3}`">
+                {{ favorites.names?.translations?.fra?.common || favorites.names?.common }}
+                <img :src="`https://flags.restcountries.com/v5/w320/${favorites.codes?.alpha_2?.toLowerCase()}.png`" :alt="favorites.codes?.alpha_3" />
             </router-link>
         </li>
     </ul>

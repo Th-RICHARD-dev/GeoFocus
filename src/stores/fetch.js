@@ -7,20 +7,7 @@ const fetch = reactive({
 
     async fetchData() {
         try {
-            const fields = [
-                'name',
-                'capital',
-                'region',
-                'flags',
-                'translations',
-                'cca3',
-                'population',
-                'area',
-                'languages',
-                'borders'
-            ];
-
-            const response = await apiClient.getAllCountries(fields);
+            const response = await apiClient.getAllCountries();
 
             if (Array.isArray(response.data)) {
                 fetch.countries = response.data;

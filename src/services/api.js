@@ -1,32 +1,43 @@
 import axios from 'axios';
 
-const BASE_URL = '/api/countries';
+const apiClient = axios.create({
+  baseURL: 'https://api.restcountries.com/countries/v5',
+  headers: {'Authorization': `Bearer ${import.meta.env.VITE_REST_COUNTRIES_KEY}`}
+});
 
-function buildFields(fields) {
-  return fields && fields.length
-    ? `?fields=${fields.join(',')}`
-    : '';
+async function getAllCountries() {
+  const [page1, page2, page3] = await Promise.all([
+    apiClient.get('', { params: { limit: 100, offset: 0 } }),
+    apiClient.get('', { params: { limit: 100, offset: 100 } }),
+    apiClient.get('', { params: { limit: 100, offset: 200 } })
+  ]);
+
+  return {
+    data: [
+      ...(page1.data?.data?.objects || []),
+      ...(page2.data?.data?.objects || []),
+      ...(page3.data?.data?.objects || [])
+    ]
+  };
 }
 
-function get(endpoint, fields = []) {
-  const url = `${BASE_URL}/${endpoint}${buildFields(fields)}`;
-  return axios.get(url);
+async function getCountryByCode(code) {
+  const response = await apiClient.get(`/codes.alpha_3/${code}`);
+  return {
+    ...response,
+    data: response.data?.data?.objects || []
+  };
 }
 
-function getAllCountries(fields = []) {
-  return get('all', fields);
-}
-
-function getCountryByCode(code, fields = []) {
-  return get(`alpha/${code}`, fields);
-}
-
-function getCountryByName(name, fields = []) {
-  return get(`name/${encodeURIComponent(name)}`, fields);
+async function getCountryByName(name) {
+  const response = await apiClient.get('/name', { params: { q: name } });
+  return {
+    ...response,
+    data: response.data?.data?.objects || []
+  };
 }
 
 export default {
-  get,
   getAllCountries,
   getCountryByCode,
   getCountryByName

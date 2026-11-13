@@ -12,8 +12,8 @@ export default {
     filteredCountries() {
       const searchTerm = this.search.toLowerCase();
       return fetch.countries
-        .filter(country => country.translations.fra.common.toLowerCase().includes(searchTerm))
-        .sort((a, b) => a.translations.fra.common.localeCompare(b.translations.fra.common));
+        .filter(country => country.codes?.alpha_3 && country.names?.translations?.fra?.common?.toLowerCase().includes(searchTerm))
+        .sort((a, b) => a.names.translations.fra.common.localeCompare(b.names.translations.fra.common));
     }
   }
 };
@@ -22,9 +22,9 @@ export default {
 <template>
   <ul>
     <li v-for="(country, index) in filteredCountries" :key="index">
-      <router-link :to="`/country/${country.cca3}`">
-        {{ country.translations.fra.common }}
-        <img :src="country.flags.png" :alt="country.cca3" />
+      <router-link v-if="country.codes?.alpha_3" :to="`/country/${country.codes?.alpha_3}`">
+        {{ country.names?.translations?.fra?.common || country.names?.common }}
+        <img :src="`https://flags.restcountries.com/v5/w320/${country.codes?.alpha_2?.toLowerCase()}.png`" :alt="country.codes?.alpha_3" />
       </router-link>
     </li>
   </ul>

@@ -6,7 +6,7 @@ export default {
     props: ['countryCode'],
     computed: {
         countryDetails() {
-            return fetch.countries.find(country => country.cca3 === this.countryCode) || null;
+            return fetch.countries.find(country => country.codes.alpha_3 === this.countryCode) || null;
         },
         isFavorite() {
             return local.favorites.includes(this.countryCode);
@@ -14,10 +14,10 @@ export default {
     },
     methods: {
         async storeCountryDetails() {
-            local.setFavorite(this.countryDetails.cca3);
+            local.setFavorite(this.countryDetails.codes.alpha_3);
         },
         async removeCountryDetails() {
-            local.removeFavorite(this.countryDetails.cca3);
+            local.removeFavorite(this.countryDetails.codes.alpha_3);
         }
     }
 };
@@ -26,8 +26,8 @@ export default {
 <template>
     <div class="country-detail-container">
         <div v-if="countryDetails">
-            <h1>{{ countryDetails.translations.fra.official }}</h1>
-            <img :src="countryDetails.flags.png" :alt="countryDetails.translations.fra.common" />
+            <h1>{{ countryDetails.names?.translations?.fra?.common || countryDetails.names?.common }}</h1>
+            <img :src="`https://flags.restcountries.com/v5/w320/${countryDetails.codes?.alpha_2?.toLowerCase()}.png`" :alt="countryDetails.codes?.alpha_3" />
             <p><strong>Capitale(s):</strong> {{ countryDetails.capital ? Object.values(countryDetails.capital).join(', ') : 'N/A' }}</p>
             <p><strong>Continent:</strong> {{ countryDetails.region }}</p>
             <p><strong>Population:</strong> {{ countryDetails.population }}</p>
