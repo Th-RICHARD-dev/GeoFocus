@@ -1,7 +1,5 @@
 # [GeoFocus](https://geofocus.vercel.app/) 🌐
 
-# GeoFocus 🌍
-
 GeoFocus est une application web interactive développée avec Vue.js permettant d'explorer, de rechercher et d'en apprendre davantage sur les pays du monde grâce à l'API Rest Countries v5.
 
 ## Fonctionnalités
