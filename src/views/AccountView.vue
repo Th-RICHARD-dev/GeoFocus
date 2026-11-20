@@ -224,9 +224,8 @@ h3 {
 }
 
 .score {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-size: 0.6em;
+    margin: 10px auto 20px;
+    font-size: 0.75em;
     color: var(--vt-c-black-mute);
     text-align: center;
 }

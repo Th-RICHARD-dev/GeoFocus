@@ -1,8 +1,8 @@
 <template>
     <div class="quiz-wrapper">
         <h2>
-            <span class="small">Testez et découvrez le</span><br>
-            <span class="big">Geo<span class="blue">Q</span>uizz</span>
+            <p class="small">Testez et découvrez le</p><br>
+            <p class="big">Geo<span class="blue">Q</span>uizz</p>
         </h2>
     </div>
 </template>
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     height: 25vh;
-    border-radius: 7.5px;
+    border-radius: 10px;
     background-color: var(--vt-c-black);
     border: 1px solid var(--vt-c-black-mute);
     color: var(--vt-c-white);

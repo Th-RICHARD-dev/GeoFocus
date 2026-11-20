@@ -109,7 +109,7 @@
         "alt": "La <a href='/country/RUS' style='color: var(--vt-c-blue);'>Russie</a> est le plus grand pays du monde avec environ 17 millions de km²."
     },
     {
-        "question": "Quel pays est composé de l'archipel de plus de 17 000 îles ?",
+        "question": "Quel pays est composé d'une archipel de plus de 17 000 îles ?",
         "options": [
             "Japon",
             "Indonésie",
@@ -270,17 +270,6 @@
         ],
         "correct_answer": "Groenland",
         "alt": "Le <a href='/country/GRL' style='color: var(--vt-c-blue);'>Groenland</a> est la plus grande île du monde, bien que techniquement il soit considéré comme une région autonome du <a href='/country/DNK' style='color: var(--vt-c-blue);'>Danemark</a>."
-    },
-    {
-        "question": "Quel est le seul département français à porter le nom d'un fleuve qui ne le traverse pas ?",
-        "options": [
-            "Le Rhône",
-            "La Gironde",
-            "La Seine-Maritime",
-            "Le Var"
-        ],
-        "correct_answer": "Le Var",
-        "alt": "Le <a href='/country/FRA' style='color: var(--vt-c-blue);'>Var</a> est le seul département français nommé d'après un fleuve (le Var) qui ne le traverse plus depuis 1860, suite à un redécoupage territorial."
     },
     {
         "question": "Quel est le désert le plus sec du monde ?",
@@ -790,7 +779,7 @@
         "options": [
             "Costa Rica",
             "Panama",
-            "Honduras",
+            "El Salvador",
             "Guatemala"
         ],
         "correct_answer": "Costa Rica",
@@ -868,9 +857,19 @@
             "Népal",
             "Bhoutan",
             "Bangladesh",
-            "Myanmar"
+            "Birmanie"
         ],
         "correct_answer": "Bhoutan",
         "alt": "Le <a href='/country/BTN' style='color: var(--vt-c-blue);'>Bhoutan</a> a le dzongkha comme langue officielle, reflétant sa culture unique."
+    },
+    {
+        "question": "Quel est le drapeau du Laos ?",
+        "options": [
+            "https://flagcdn.com/w320/la.png",
+            "https://flagcdn.com/w320/th.png",
+            "https://flagcdn.com/w320/cr.png",
+            "https://flagcdn.com/w320/kh.png"
+        ],
+        "correct_answer": "https://flagcdn.com/w320/la.png"
     }
 ]
